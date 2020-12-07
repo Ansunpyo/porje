@@ -53,25 +53,27 @@
 			if(articleList != null && listCount > 0) {
 			%>
 			<tbody>
+				<tr>
 				<%
 				for(int i=0;i<articleList.size();i++) {
 				%>
-				<tr>
-					<td>
+					<td style="text-align: center;">
 						<img src="/upload/<%=articleList.get(i).getBoard_file() %>" alt="-" 
 						style="width : 355px; height:300px; align:center;"/>
-					</td>					
-				</tr>
-				<tr>
-					<td>
 						<%if(articleList.get(i).getBoard_re_lev()!=0) { %>
 						<%}else{ %><%} %>
-							<a href="boardDetail.do?board_num=<%=articleList.get(i).getBoard_num() %>&page=<%=nowPage %>">
+							<br><a href="boardDetail.do?board_num=<%=articleList.get(i).getBoard_num() %>&page=<%=nowPage %>">
 							<%=articleList.get(i).getBoard_subject() %>
 							</a>
 					</td>
+				<%
+					if(i%3==2) {
+						out.println("</tr><tr>");						
+					}
+				} 
+				%>
 				</tr>
-				<%} %></tbody>
+				</tbody>
 		</table>
 			<%
 			}

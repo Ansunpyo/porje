@@ -10,6 +10,7 @@
 	#registForm {
 		width: 500px;
 		height: 610px;
+		border: 1px sloid black;
 		margin: auto;
 	}
 	
@@ -24,12 +25,12 @@
 	
 	.td_left {
 		width: 150px;
-		background: #33E1B3;
+		background: #FFFFFF;
 	}
 	
 	.td_right {
 		wdth: 300px;
-		background: #33E1B3;
+		background: #FFFFFF;
 	}
 	
 	#commandCell {
