@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<Resource 
+		name="jdbc/MySQLDB" 
+		auth="Container" 
+		type="javax.sql.DataSource" 
+		username="root" password="yt1234"
+		driverClassName="com.mysql.cj.jdbc.Driver"
+		factory="org.apache.tomcat.jdbc.pool.DataSourceFactory"
+		url="jdbc:mysql://localhost:3306/testdb?useUnicode=true&amp;characterEncoding=UTF8&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=Asia/Seoul"
+		maxActive="500"
+		maxIdle="100"
+	/>
+</Context>
